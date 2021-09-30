@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "Federico Vitale",
+      "authorEmail": "mail@fedevitale.dev",
+      "authorUrl": "https://fedevitale.dev"
+    }
+  }
+}

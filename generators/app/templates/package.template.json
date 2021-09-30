@@ -1,0 +1,28 @@
+{
+  "name": "<%= name %>",
+  "description": "<%= description %>",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "typings": "dist/index.d.ts",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "tscheck": "ttsc --noEmit",
+    "dev": "node build.js",
+    "build": "NODE_ENV=production node build.js",
+    "dev:watch": "node build.js --watch",
+    "prebuild": "rm -rf dist && npm run tscheck"
+  },
+  "devDependencies": {
+    "@types/node": "^15.12.4",
+    "chalk": "^4.1.2",
+    "cowsay": "^1.5.0",
+    "esbuild": "^0.13.3",
+    "esbuild-node-externals": "^1.3.0",
+    "npm-dts": "^1.3.10",
+    "ttypescript": "^1.5.12",
+    "typescript": "^4.3.4",
+    "typescript-transform-paths": "^3.0.0"
+  }
+}
